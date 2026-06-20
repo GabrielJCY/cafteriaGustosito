@@ -1,26 +1,37 @@
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* Definición de colores personalizados */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-crema: #FBF8F4;
+  --color-negro: #1A0F0A;
+
+  --color-cafe-50: #FBF8F4;
+  --color-cafe-100: #F5EFE8;
+  --color-cafe-200: #E8DDD5;
+  --color-cafe-300: #D4C4B8;
+  --color-cafe-400: #B8A294;
+  --color-cafe-500: #8D6E63;
+  --color-cafe-600: #6F4E37;
+  --color-cafe-700: #5D4037;
+  --color-cafe-800: #4E342E;
+  --color-cafe-900: #3E2723;
+  --color-cafe-950: #1A0F0A;
+
+  /* Fuente principal */
+  --font-sans: var(--font-poppins), sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Estilos base */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-crema);
+  color: var(--color-negro);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+/* Opcional: suavizado de texto */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
