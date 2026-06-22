@@ -1,6 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+
 
 // Fuente Poppins (moderna, muy legible y con variedad de pesos)
 const poppins = Poppins({
@@ -35,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${poppins.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", poppins.variable, "font-sans", inter.variable)}
     >
       <body className="min-h-full flex flex-col bg-[#FBF8F4] text-[#1A0F0A]">
         {children}
