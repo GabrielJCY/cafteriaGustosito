@@ -5,7 +5,7 @@ import { ProductoTraducido } from "@/components/ProductoTraducido";
 import { MenuWithFilter } from "@/components/MenuWithFilter";
 import { db } from "@/lib/db";
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight, Coffee, Instagram, MapPin, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Coffee, Sparkles } from "lucide-react";
 import { Fraunces, DM_Sans } from "next/font/google";
 
 const fraunces = Fraunces({ subsets: ["latin"], weight: ["400", "600", "800", "900"], style: ["normal", "italic"], variable: "--font-fraunces" });
